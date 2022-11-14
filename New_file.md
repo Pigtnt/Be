@@ -7,85 +7,76 @@
 - 語言@or框架名稱#
     -
     - 簡單敘述
-    - 優點
-    - 缺點
-- @PHP
-    -
-    - Web 後端語言王，市佔率高達 83.5%，非常的易學易懂易開發
-    - 學習曲線低，跨平台開發、語法簡單、開發社群純熟
-    - 語法嚴謹度低，複雜程序執行支援差
-- #Laravel
-    -
-    - 為PHP web的框架，是一種 [MVC(Model-View-Controller)](https://tw.alphacamp.co/blog/mvc-model-view-controller) 的架構
-        - Model 屬於資料的部份，可能是商業邏輯或是資料庫存取
-        - View 屬於顯示的部份，像是 HTML、CSS 等
-        - Controller 會偵對請求做出回應及處理，例如從 Model 中取得資料，並要求 View 來顯示
-    - Laravel 基本上具備所有網站開發工程全方面的優化，架構漂亮，社群也非常活躍，持續進步
-    - 編譯執行上比較緩慢
-- @C#
-    -
-    - 市佔率在第二名，約佔 13% 左右，C#用在網站開發外，還有用在遊戲的引擎 unity，語言開發上由於繼承 Java 的特性，為強語言類別，具有較嚴謹的開發規範，會在本地開發時期就出現錯誤，提升新手開發程式的程式品質
-    - 完整的開發生態系，先進的語法功能
-    - 複雜的程式碼結構，本地編譯測試速度稍慢些
-- @Ruby
-    -
-    -  Ruby 這個語言決大部分都是使用 Rails 作為網站開發框架。減少開發不必要的瑣碎時間、良好的介面設計，非常快速能夠上手，也提供許多指令和語法，快速完成許多複雜的邏輯功能，建議使用 Mac 或 Linux 作為 Ruby 開發的作業系統，開發有 99% 都是搭配 Rails 進行
-    - 語法簡單輕便、開發與部署高效、大量易於使用的商用套件
-    - 程式執行效率較差、相較PHP, C# 等語言學習曲線較高
-- #Rails
-    -
-    - Ruby on Rails，簡寫為 RoR，是個嚴格 MVC 架構的框架，這個框架的核心概念為『不做重複的事』與『慣例優於設定』(人類的認知慣例大於自行設定)
-    - 這個框架能幫新手快速建立應用程式，但也因為『異常』快速，例如:最經典的 [devise](https://ihower.tw/rails/auth.html) 這個套件，靠幾行指令就能生出完整的會員系統
-    - 在真正做客製化調整時，會有比較大的學習曲線和挫折
+    - 優點or缺點
 - @Java
     -
+    - Java是強型別 靜態語言
     - 非常貼近所謂『物件導向設計』的理念，也因為獨特的編譯方式，擁有極好的跨平台執行效率。Java 的語法嚴謹，結構嚴密，台灣會使用 Java 寫網頁的，大部分都是銀行金融機構
     - 用途廣泛，職涯道路寬、開發嚴謹軟體結構完整， 執行效率優秀
     - 開發過程極吃電腦記憶體量(緩慢)、程式語法較為龐雜
-- #Spring
+- #Spring framework
     -
-    - Spring 框架是 Java web 框架。Spring 框架對比一般 MVC 框架最大的特色為使用控制反轉（IOC）與 實現其方法的依賴注入（DI），降低程式間因改動出 Bug 的關聯程度，因此提升了維護性。
-    - 集中管理物件，物件和物件之間的耦合度減低，方便維護物件。在不修改程式碼的情況下可以對業務程式碼進行增強，減少重複程式碼，提高開發效率，維護方便
-    - 從應用層面來說是沒有缺點的，簡化開發， 如果想深入到底層去了解就非常困難
-- @Python
-    -
-    - 熱門機器學習、AI 等領域的主流撰寫語言，它非常簡潔易讀的程式語言結構，且本身的編譯方法，讓 Python 程式可以快速自由的跨平台執行，不像 Ruby 受限於作業系統(Mac 或 Linux)、Java 受限於緩慢的執行測試速度。
-    - 語法簡單、應用層面極廣、熱門度高
-    - 執行速率較慢，縮排寫法新手易錯
-- #Django
-    -
-    - 語言為python，Django 的軟體設計模式為 [MTV](https://ycy-tai.medium.com/django-beginner-02-%E9%97%9C%E6%96%BCmtv%E6%9E%B6%E6%A7%8B-c8d55ba5aca5)(Model-Template-View)，是一個與 MVC (Model-View-Controller) 略有不同，但核心概念相同的設計方法，如果要用在長期穩定的大型商業結構，推薦使用 Django。
-        - Model : 描述你的資料類型
-        - Template : 使用者看到網頁的形式
-        - Views : 傳達資料(重點在於資料傳達的內容 
-    - Django 框架的代碼結構統一且清晰易懂，開發人員可以像做填空題一樣添加更多功能，也可以設計自定義的類或接口
-    - 許多可重用的模塊而限制了開發速度。需要確保以前的版本仍與新版本兼容，導致其運行稍慢。
+    - 它提供一些不錯的功能如[依賴注入](https://ithelp.ithome.com.tw/articles/10211847)(Dependency Injection)與箱外模組化。開發Web App
+    - 控制反轉IoC:控制反轉是一個設計思想 ，把對於某個物件的控制權移轉給第三方容器 
+    <!--
+    簡單解釋
+    A物件程式內部需要使用B物件 A,B物件中有依賴的成份
+    控制反轉是把原本A對B控制權移交給第三方容器
+    降低A對B物件的耦合性，讓雙方都倚賴第三方容器。-->
+    - 輕量級、鬆散耦合的
+    - Spring Web是一個設計良好的Web MVC框架
+    - 模組化組織
+    - 易於測試
+        - 依賴:指的是物件導向中的繼承、實現、擁有等關係。
+        - 注入:的意思是從外部傳入。 
+        - 箱外模組化如:Spring Serurity、Spring MVC等，這些模組可以大大降低應用程式的開發時間。
+        - Web App 優點:跨平台、成本較低、維護更新容易。
+        - Web App 缺點:效能較差不適合複雜的購物金流或動畫、遊戲等。對硬體裝置的支援度較低例如：相機、 GPS 地理定位...等功能。
+        - 鬆散耦合:耦合指的是系統中元件互相依賴的程度，越少的依賴，重複使用性與彈性就越高。
+        - MVC框架:
+            - View:負責處理訪客直接見到／互動的東西，即用戶介面(UI)通常由前端的人員去完成
+            - Controller:負責決定整個應用程式該怎樣運行
+            - Model:負責讀寫和資料轉變的工作，通常由後端開發人員去完成
+- #Spring boot
+    - 
+    - Spring Boot擴展了Spring framework，透過建立Spring application省去了冗長的設定檔(configurations)，在相同功能下Spring boot需要的程式碼相對少。簡單來說Spring Boot是更加簡單地且方便的拓展了Spring本身在開發、測試、部署
+    - 易於理解開發應用
+    - 使配置變得簡單並彈性
+    - 提供有力的管理Rest端點
+    - 自動化配置
+    - 依賴套件管理簡單
+    - 內建[Servlet](https://ithelp.ithome.com.tw/articles/10184867)容器
+    - 獨立打包直接運行
+
 - #Node.js
     -
-    - 實現可以在後端執行 Javascript 的機制，Node.js 也非常易寫，執行效能非常優良，與前面提到的 Ruby, Python 不同。由於全端開發的特性，許多新創公司也開始選用Node.js建構他們的 MVP(Minimum Viable Product)產品，能跨平台開發與執行的語言，難以維護是他常被人詬病的地方
-    - 開發快速，輕量、執行效率高、可跨端跨平台執行，Node是一個非阻塞I/O(non-blocking I/O)和事件驅動(event-driven)的JavaScript執行環境(runtime)，所以它非常適合用來構建I/O密集型應用，例如Web服務等。
+    - 實現可以在後端執行 Javascript 的機制，Node.js 也非常易寫，執行效能非常優良，能跨平台開發與執行的語言
+    - 高併發
+    - Node是一個非阻塞I/O(non-blocking I/O)和[事件驅動](https://hackmd.io/@sysprog/event-driven-server)(event-driven)的JavaScript執行環境(runtime)，所以它非常適合用來構建I/O密集型應用，例如Web服務等
+    - 非阻塞I／O調用後會立即返回結果或一個錯誤，而阻塞I／O調用後則不會立即返回
+    - Node.js 很適合小型和輕量級專案
+    - JavaScript 是弱型別 動態語言
+    - Node.js 的生態完善，但開源組件庫質量參差不齊，更新快，向下不兼容
     - 維護困難，程式碼有Bug 影響範圍較巨大
+    - 只支持單核CPU，不能充分利用CPU
+    - Debug不方便，錯誤沒有stack trace
 - #Express
     -
-    - express 是基於 node.js web 應用程式的一種開發框架，可以快速搭建一個功能完整的網站。express.js 是建構在 Node.js [中介軟體模組](https://expressjs.com/zh-tw/guide/writing-middleware.html)的
+    - express 是基於 node.js web 應用程式的一種開發框架，可以快速搭建一個功能完整的網站。大量的 HTTP 公用程式方法與中介軟體(Middleware)。
     - 它是快速，集思廣益，極簡的Node.js Web架構。易於與database做連線，像是MongoDB, Redis, MySQL
-    - 不能忍[Callback](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/callback.html)
-- @[Golang](https://ithelp.ithome.com.tw/articles/10233791)
-    -
-    - 是由 Google 發展的泛用型程式語言。同時具備簡潔的語法和優秀的效能
-    - 背後的老大哥是google
-- #Gin
-    -
-    - 使用 golang 所開發出來的 web frameworkgin 就是基於gin的設計原理打造，但是效能比 martini 還要強大框架。Gin 是一套用 golang 原生的 net/http package 封裝過後的框架，效能完全有保證，還有各種方便的 data binding 機制
-    - JSON validation：Gin 可以解析和驗證傳進來的 JSON。 Crash-free：Gin 可以攔截 HTTP 請求過程中發生的 panic 並從中復活，如此你的伺服器將可以總是活著。
-    - 不適合 CPU 密集的應用
+    - 靈活，具有可擴充性，可以依照個別需要加入各種套件
+    - 為Web App框架
+    - 為單頁式SPA應用程式
+    - 可以為多網頁與SPA混合式Web應用程式
+        - 中介軟體(Middleware):是指從發出請求後，到接收回應前，用來處理特定用途的程式。
+        <!-- 簡單來說是一個可以接收request 和 response 物件的函數，每個中介軟體可以針對所收到的物件進行修改處理或是解析處理，處理完畢後再決定是否繼續傳給下個中介軟體或是中斷傳遞行為。 -->
 
 **所選用的框架及語言**
 ===
-### 框架:[Gin](https://ithelp.ithome.com.tw/articles/10244740)
+### 框架:Spring boot
 
-### 語言:[Go language](https://ithelp.ithome.com.tw/articles/10233791)
-### 理由: 
-#### Gin是個簡單輕量的框架，設定簡單，撰寫簡單，沒有太多包袱也不用綁定一堆工具，比起 Spring boot 更好上手，這可以算是優點也算缺點，短周期可以快速開發。Go提供net/http包, 能提供路由、靜態文件、Template、Cookie、檔案系統等。[保留字](https://www.taroballz.com/2018/03/24/Go_package/)只有25個
+### 語言:Java
+### 理由:首先Java是強型別靜態語言，且Spring boot 相較於Spring 對於開發者來說是非常便捷的。其中有很多原本Spring 要自己配置的步驟，Spring boot會幫忙自動化配置。SpringBoot 官方提供了大量日常企業應用研發各種場景的 spring-boot-starter 依賴模組。這些依賴模組都遵循著約定成俗的預設配置，並允許我們根據自身情況調整這些配置。再用上Maven(是一個專案管理與自動化建構工具，主要用於 Java 專案)去解決了軟體開發的兩大難題(如何建構專案&如何管理各種軟體套件的依賴關係)
 
+####
 
